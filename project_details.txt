@@ -3,3 +3,5 @@ Hello World!
 Implement new feature to demonstrate branch process knowledge.
 
 Edit code to fix a bug.
+
+Clarified details about project usage.
