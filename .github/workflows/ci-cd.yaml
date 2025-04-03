@@ -1,0 +1,24 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create project_details.txt
+        run: |
+          echo "Hello World!" > project_details.txt
+          echo "" >> project_details.txt
+          echo "Implement new feature to demonstrate branch process knowledge." >> project_details.txt
+          echo "" >> project_details.txt
+          echo "Edit code to fix a bug." >> project_details.txt
+          echo "" >> project_details.txt
+          echo "Clarified details about project usage." >> project_details.txt
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: text-artifact
+          path: project_details.txt
