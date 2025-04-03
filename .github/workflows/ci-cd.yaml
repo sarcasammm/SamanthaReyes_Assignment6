@@ -18,7 +18,7 @@ jobs:
           echo "" >> project_details.txt
           echo "Clarified details about project usage." >> project_details.txt
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.0
         with:
           name: text-artifact
           path: project_details.txt
